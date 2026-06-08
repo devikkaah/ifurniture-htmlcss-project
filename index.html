@@ -1,0 +1,153 @@
+<!-- designing a website for furnitures -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFurniture</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome - for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <a class="brand" href="">
+            <i class="fa-solid fa-couch"></i>
+            <span class="brandName">IFurniture</span>
+        </a>
+        <!-- Menu  -->
+        <!-- Checkbox -->
+        <input type="checkbox" id="check">
+        <!-- label - with two icons -->
+        <label for="check" class="icons">
+            <!-- menu icon -->
+            <i class="fa-solid fa-bars" id="menuicon"></i>
+            <!-- close icon -->
+            <i class="fa-regular fa-circle-xmark" id="cancelicon"></i>
+        </label>
+        <!-- links -->
+        <ul class="navlinks">
+            <!-- id is given as the href for transformation while clicking on the navbar -->
+            <li class="links"><a href="#home" class="link">Home</a></li>
+            <li class="links"><a href="#products" class="link">Products</a></li>
+            <li class="links"><a href="#about" class="link">About</a></li>
+            <li class="links"><a href="#contact" class="link">Contact</a></li>
+    </nav>
+    <!-- hero section  -->
+    <section id="home" class="hero">
+        <!-- text content -->
+        <div class="heroText">
+            <h1 id="herotitle">Modern Furniture for Modern Living</h1>
+            <p id="heropara">Explore our wide range of stylish and comfortable furniture to transform your living space.
+            </p>
+            <button class="herobutton">Shop Now</button>
+        </div>
+        <!-- image content -->
+        <div class="heroimage">
+            <img src="./images/Modern Tranquil Living Room.png" alt="no image" id="furnitureimage">
+        </div>
+    </section>
+    <!-- products section -->
+    <section id="products" class="products">
+        <!-- heading -->
+        <h2 class="producthead">Our Products</h2>
+        <!-- div for cards -->
+        <div class="productcontainer">
+            <!-- 3 cards are needed -->
+            <!-- card 1 -->
+            <div class="card">
+                <!-- image -->
+                <img src="./images/Modern Cream Chair.png" alt="" class="cardimg">
+                <!-- name -->
+                <h3 class="productname">Modern Cream Chair</h3>
+                <!-- price -->
+                <p class="productprice">$299.99</p>
+                <!-- button -->
+                <button class="herobutton">Buy Now</button>
+            </div>
+            <!-- card 2 -->
+            <div class="card">
+                <!-- image -->
+                <img src="./images/Elegant Living Room with Green Sofa.png" alt="" class="cardimg">
+                <!-- name -->
+                <h3 class="productname">Elegant Green Sofa</h3>
+                <!-- price -->
+                <p class="productprice">$599</p>
+                <!-- button -->
+                <button class="herobutton">Buy Now</button>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+                <!-- image -->
+                <img src="./images/Minimalist Dining Area.png" alt="" class="cardimg">
+                <!-- name -->
+                <h3 class="productname">Minimalist Dining Area</h3>
+                <!-- price -->
+                <p class="productprice">$499</p>
+                <!-- button -->
+                <button class="herobutton">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- banner -->
+    <section class="banner" id="about">
+        <!-- heading -->
+        <h2 class="abouthead">About Us</h2>
+        <p class="aboutpara">Welcome to IFurniture, your one-stop shop for modern and stylish furniture. We are
+            dedicated to providing high-quality pieces that enhance your living space. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Commodi dicta optio, nostrum corporis accusamus repellendus, nisi totam eum,
+            maxime omnis fuga! Earum facere dolorem nobis aperiam temporibus asperiores eius reiciendis!
+            Sit maxime aut, autem possimus dignissimos odio repellat labore in voluptate magnam totam mollitia veritatis
+            atque aperiam illum vel molestias. Dolorum itaque pariatur nulla eligendi esse, at id cumque aut.
+            Porro nobis dicta voluptatem quas eligendi optio fuga, unde delectus animi excepturi libero, provident
+            tempora obcaecati quisquam repellendus, ipsam necessitatibus tempore commodi? Ad amet quaerat consequuntur
+            sapiente optio magnam cupiditate.</p>
+        <button class="herobutton aboutbutton">Let's Talk</button> <!-- can give style using aboutbutton class -->
+    </section>
+    <!-- footer -->
+    <section class="contact" id="contact">
+        <!-- contact div -->
+        
+            <!-- contact text -->
+            <div class="contacttext">
+                <h3 class="contacthead">Contact Us</h3>
+                <h4 class="contactph">123-456-7890</h4>
+                <p class="contactmail">info@furniture.com</p>
+                <!-- icons -->
+                 <!-- to open in new page - target="_blank" -->
+                <div class="socialicons">
+                    <a class="smlink" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="smlink" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="smlink" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- subscribe -->
+             <div class="subscribe">
+                <h3 class="subscribehead">Join our Mail List</h3>
+                <div class="box">
+                    <input type="text" placeholder="Email" class="subinput">
+                    <button class="subbutton">Subscribe</button>
+                </div>
+             </div>
+        
+    </section>
+    <!-- footer -->
+        <footer class="footer">
+            <!-- &copy used to get copyright symbol -->
+            <p>&copy; 2026 IFurniture. All rights reserved.</p>
+        </footer>
+</body>
+
+</html>

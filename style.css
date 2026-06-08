@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    box-sizing: border-box; /* to include padding and border in the total width and height of the element */
+    font-family: "Noto Sans", sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+    color: #333; 
+}
+.navbar{
+    display:flex; /* to align items in a row */
+    justify-content: space-between; /* to give space between brand and links */
+    align-items: center;
+    padding: 20px 8%; /* 8% given to adjust in different screen sizes , 20px given to top and bottom*/
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(14, 14, 14, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 1;
+}
+.brand{
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    font-weight: 700;
+}
+/* to hide checkbox */
+#check{
+    display: none;
+}
+/* label icons to be set on right side. */
+.icons{
+    font-size: 28px; /* to set same as brand size */
+    cursor: pointer;
+    position: absolute; /* to position icons on top of the navbar */
+    right: 5%;
+    display: none; /* hide icons on larger screens */
+}
+.navlinks{
+    display:flex;/* to align links in a row */
+    gap: 20px;
+    list-style: none; /* remove the default bullet points from the list */
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3em;
+}
+.link:hover{
+    color:#854500;/* Change to your desired hover color */
+}
+/*june 2nd class*/
+/* home section - below navbar */
+.hero{
+    display:flex;
+    padding: 160px 8%; /* to adjust in different screen sizes */
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+/* flex working same as of grid. to align items in same row */
+/* works same like fr unit */
+.heroText{
+       flex: 1; /* to take up equal space as the image */
+       
+       /* adding animation, ease used for smoothness */
+       animation: fadeIn 1.5s ease;
+}
+#herotitle{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+#heropara{
+    margin-bottom: 20px;
+    line-height: 1.6; /* to increase the space between lines of text */
+}
+/* styling the button */
+.herobutton{
+    padding: 12px 25px;
+    border: none;
+    background-color: #854500;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s; /* to add smooth transition effect on hover */
+}
+.herobutton:hover{
+    background:rgb(0, 32, 0); /* Change to your desired hover color */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+.heroimage{
+    flex: 1; /* to take up equal space as the text */
+}
+#furnitureimage{
+    width: 100%;
+    border-radius: 10px;
+}
+/* products part */
+.products{
+   padding: 0px 8% 60px 8%; /* to adjust in different screen sizes */
+   text-align: center;
+}
+.producthead{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.productcontainer{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap; /* to wrap the cards to the next line if they exceed the container width */
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(14, 14, 14, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: 0.3s; /* to add smooth transition effect on hover */
+}
+.card:hover{
+    transform: translateY(-10px); /* to move the card up on hover */
+}
+.cardimg{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover; /* to ensure the image covers the entire area of the card without distortion */
+}
+.productname{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.productprice{
+    font-size: 18px;
+    color: #854500;
+    margin-bottom: 15px;
+}
+.banner{
+    margin: 0px 8% 60px 8%; 
+    padding: 0px 40px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(./images/Sophisticated\ Modern\ Living\ Room.png);
+    background-size: cover; /* to ensure the background image covers the entire area of the banner */
+    background-position: center; /* to center the background image */
+    border-radius: 20px;
+    background-attachment: fixed; /* to create a parallax effect when scrolling */
+}
+.abouthead{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+.aboutpara{
+    color: white;
+    margin-bottom: 30px;
+}
+.aboutbutton{
+    background-color: white;
+    color: #854500;
+    font-weight: 600;
+    font-size: 18px;
+}
+.contact{
+    height: 200px;
+    background-color:white;
+    box-shadow: 0 2px 10px rgba(14, 14, 14, 0.1);
+    padding: 0px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contacthead,.subscribehead{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:#333;
+}
+.contactph,.contactmail{
+    font-size: 16px;
+    font-weight: 300;
+}
+.socialicons{
+    margin-top: 20px;
+}
+.smlink{
+    color: #333;
+    margin-right: 10px;
+}
+.box{
+    display: flex;
+}
+.subinput{
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.subbutton{
+    background-color: #854500;
+    color: #f5f5f5;
+    border: none;
+}
+.footer{
+    padding: 15px;
+    background-color: #333;
+    color: #f5f5f5;
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth; /* to enable smooth scrolling when clicking on anchor links */
+}
+/* keyframes - to create animations */
+@keyframes fadeIn{
+    /* starting position */
+    0%{
+        opacity: 0; /* to make the element invisible at the start of the animation */
+        transform: translateY(30px); /* to move the element down by 20px */
+    }
+    /* ending position */
+    100%{
+        opacity: 1;
+        transform: translateY(0); /* to move the element back to its original position */   
+    }
+}
+/* responsive styles */
+@media (max-width: 768px) {
+    /* style for smaller devices - under tablet i.e, mobile */
+    .navbar{
+        padding: 20px 5%;
+    }
+    .brand,.icons{
+        font-size: 24px;
+    }
+    .icons{
+        display:flex;
+    }
+    #cancelicon{
+        display:none;
+    }
+    /* ~ to get all the siblings */
+    /* pseudo class checked - used to target the checkbox, when it is clicked */
+    #check:checked~.icons #menuicon{
+        display:none; /* hide menu icon when checkbox is checked */
+    }
+    #check:checked~.icons #cancelicon{
+        display:block; /* show cancel icon when checkbox is checked */
+    }
+    .navlinks{
+        /* to adjust links to column*/
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        /* to blur the background when viewing the menu */
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        height: 0;
+        display: none; /* hide links by default */
+    }
+    #check:checked~.navlinks{
+        height: fit-content; /* adjust height to fit the content when checkbox is checked */
+        display: block; /* show links when checkbox is checked */
+    }
+    .links{
+        text-align: center;
+        margin: 1.5rem 0px;
+    }
+    .link{
+        color: brown;
+    }
+    /* to change the layout for smaller screens, making in column */
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    #herotitle{
+        font-size: 32px;
+    }
+    .contact,.banner{
+        height: fit-content;
+        padding: 40px 8%;
+    }
+}
